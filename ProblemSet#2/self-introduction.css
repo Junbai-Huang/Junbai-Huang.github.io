@@ -1,0 +1,210 @@
+h1 {
+    font-size: 20px;
+    color: aliceblue;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    line-height: 50px;
+}
+p {
+    color: aliceblue;
+    font-size: 16px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; /* 水平居中 */
+}
+
+.navbar li {
+    display: inline-block; /* 水平排列 */
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*鼠标移动到选项上修改背景颜色 */
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #black;
+}
+
+
+/* 除了最后一个选项(last-child) 其他的都添加分割线 */
+.active li {
+    border-right: 1px solid #bbb;
+}
+
+.active li:last-child {
+    border-right: none;
+}
+
+
+section, footer {
+    background-color: rgb(236, 226, 212);
+}
+.start {
+    background-color: antiquewhite;
+    color: white;
+    height: 90vh;
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.start h2 {
+    margin: 15px 0;
+}
+.start p {
+    margin: 2px 0;
+}
+
+.intro {
+    display: flex;
+}
+
+.intro img {
+    background-color: black;
+    width: 50%;
+}
+.info {
+    width: 50%;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info h3 {
+    color: aliceblue;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.info p {
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.info ul {
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.achieve {
+    background-color: rgb(21, 21, 21);
+    color: aliceblue;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+.achieve h2 {
+    margin: 7px;
+}
+.achieve blockquote {
+    font-size: 13;
+    margin: 8px;
+}
+
+h5 {
+    font-size: 25px;
+    background-color: rgb(21, 21, 21);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pic {
+  display: flex;
+  background-color: rgb(21, 21, 21);
+  grid-template-columns: repeat(4, 1fr); /* 四列布局 */
+  grid-gap: 20px; /* 图片之间的间隔 */
+  align-items: center;
+  padding: 30px 80px 80px 80px;
+  justify-content: space-between;
+}
+.pic img {
+  width: 200px; /* 图片宽度占满容器 */
+  height: auto; /* 高度自适应 */
+  flex-direction: column; /* 垂直方向排列 */
+  align-items: center; /* 垂直居中对齐 */
+  text-align: center; /* 水平居中对齐文本 */
+}
+.pic div {
+  text-align: center; /* 文本居中 */
+}
+.pic p {
+  font-size: 15px;
+  color: rgb(232, 239, 245);
+}
+
+.skills {
+    display: flex;
+    background-color: rgb(21, 21, 21);
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px 80px 80px;
+}
+.skills div {
+    width: 300px;
+    text-align: center;
+}
+.skills img {
+    width: 100%;
+    border-radius: 10px;
+}
+.skills h1 {
+    color: aliceblue;
+}
+.skills h3 {
+    font-size: 18px;
+    color: aliceblue;
+    margin: 10px;
+}
+.skills p {
+    font-size: 15px;
+    color: rgb(232, 239, 245);
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
